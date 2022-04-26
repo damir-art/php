@@ -2,7 +2,7 @@
 file_put_contents() записывает данные в файл. Принимает параметры: путь к файлу, данные. Функция возвращает число в байтах, равное контенту.
 
     // Получаем содержимое страницы сайта
-    $file = file_get_contents("https://www.fdoctor.ru/vrach-kryuchenkova-nataliya-vladimirovna/");
+    $file = file_get_contents("https://site-name");
 
     // Записываем содержимое сайта в файл
     file_put_contents("doctor.txt", $file);
@@ -10,8 +10,8 @@ file_put_contents() записывает данные в файл. Приним�
 Перезаписывает в файл:
 
     // Получаем содержимое страницы сайта
-    $file = file_get_contents("https://www.fdoctor.ru/vrach-kryuchenkova-nataliya-vladimirovna/");
-    $file2 = file_get_contents("https://www.fdoctor.ru/vrach-egorov-vladislav-mihailovich/");
+    $file = file_get_contents("https://site-name");
+    $file2 = file_get_contents("https://site-name");
 
     // Записываем содержимое сайта в файл
     file_put_contents("doctor.txt", $file);

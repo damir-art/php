@@ -24,10 +24,14 @@ https://www.php.net/manual/ru/refs.fileprocess.file.php
 - rename() - переименовывает файл или папку
 - mkdir() - создаёт директорию
 - rmdir() - удаляет директорию
+- unlink() - удаляет файл
+- touch() - изменяет время создания/модификации файла/папки
 
-    $context [, int $offset = -1 [, int $maxlen ]]]] )
-    bool touch ( string $filename [, int $time = time() [, int $atime ]] )
-    bool unlink ( string $filename [, resource $context ] )
+    $context [, int $offset = -1 [, int $maxlen ]]]])
+
+## Работаем с CSV файлами
+- fputcsv() - переводит строки в CSV
+- fgetcsv() - разбирает CSV-файл
 
 ## Дополнительно
 - fopen() - открывает файл на чтение/запись
@@ -35,3 +39,5 @@ https://www.php.net/manual/ru/refs.fileprocess.file.php
 - fclose() - закрывает открытый файл
 
 Все три функции выше можно заменить одной: `file_put_contents()`. `file_get_contents()` тоже заменяет три функции открытие/чтение/закрытие.
+
+Очень много функций для работы с файлами, просмотри их все.

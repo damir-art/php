@@ -51,7 +51,6 @@
     $login = $_POST["login"];
     $password = $_POST["password"];
 
-    // Добавляем куки
     foreach($users as $user) {
         if($user["login"] == $login && $user["password"] == $password) {
             echo "Авторизация";
@@ -71,7 +70,7 @@
 
     <h1>Добро пожаловать <?php echo $_SESSION["login"]; ?></h1>
     <p>
-        <a href="logout.php">Выход</a> <!-- Очистка кук -->
+        <a href="logout.php">Выход</a>
     </p>
 
 ## logout.php

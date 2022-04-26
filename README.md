@@ -2,6 +2,12 @@
 ## Руководство по PHP
 Изучив массивы и строчные функции, сделать парсер HTML-страниц с помощью функции `htmlspecialchars()`, этот парсер будет искать теги: title, h1, ссылки и выводить их.
 
+## В начале кода
+
+    header("Content-type: text/html; charset=utf-8");
+    error_reporting(-1);
+
+## echo
 Команда `echo` выводит данные в браузере:
 
     <?php
@@ -41,11 +47,6 @@
     \"
     \n - перенос строки
     \\
-
-## В начале кода
-
-    header("Content-type: text/html; charset=utf-8");
-    error_reporting(-1);
 
 ## Разное
 - print_r() - показывает массивы и объекты
